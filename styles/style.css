@@ -6,9 +6,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-    /*background-color: #f8f9f9;
-    background-image: url('https://kingstudio.ro/demos/glass-ui/assets/images/blur-light.jpg');
-*/
 }
 
 section {
@@ -30,8 +27,26 @@ section {
   justify-content: center
 }
 
+.styleSection {
+  margin: 5px 5px 5px 5px;
+  height: 100%;
+  flex-direction: column;
+  position: relative;
+}
+
+.row {
+  --bs-gutter-x: 0rem;
+}
+
+.imgAgromas {
+  width: 47%;
+}
 
 /* SECCION MENU*/
+.imgicon{
+  width: 65px;
+  height: 65px;
+}
 
 .nav-link {
     font-size: 18px;
@@ -46,17 +61,16 @@ section {
 }
 
 .bg-body-tertiary {
-  /*background-color: rgb(255, 255, 255, 0.5) !important; 
-    border: solid 1px rgba(255, 222, 255, 0.2);
-     border-radius: 1rem;
-  */
   background-color: #FFFFFF;
   font-size: 14px;
   height: 78px;
- 
   font-size: 1rem;
   color:white;
 
+}
+
+.banner-header{
+  background-color: #f1f2f2;
 }
 
 /* FIN SECCION MENU*/
@@ -69,34 +83,20 @@ section {
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    overflow-y: auto;
-    overflow-x: auto;
-}
-
-.scrollable-section {
-  overflow-x: auto;
-  white-space: nowrap; /* Importante si tienes contenido en línea, como imágenes o tarjetas */
-}
-
-.containerComoParticipar {
-  width: 100%;
-  height: 100%;
-text-align: center;
 }
 
 .imgtext01 {
-  width: 85vh;
-  height: 35vh;
+  width: 80%;
 }
 
 .imgtext02 {
-  width: 54vh;
-  height: 12vh;
+  width: 60%;
+  height: 85%;
 }
 
 .imgCard {
-  width: 46vh;
-  height: 28vh;
+  width: 60%;
+  height: 70%;
 }
 
 .curved-title {
@@ -184,6 +184,7 @@ text-align: center;
   padding: 2px;
   font-size: 0.8rem;
   display: inline-block;
+  border: 0px;
 }
 
 .btn-privacy-up {
@@ -266,11 +267,10 @@ text-align: center;
 
 /* SECCION SORTEO CABALLOS */
 #sorteoCaballos{
-    background-image: url('../images/bacground_Cafe.jpg');
+    background-image: url('../images/bacground_Cabalos.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 100vh;
 }
 
 .imgHorse {
@@ -297,6 +297,16 @@ text-align: center;
     2px 2px 2px #42210B;
 }
 
+.text-orange {
+  background: none;
+  color: #ffffff;
+  text-shadow: 
+    2px 4px 2px #ED1C24, 
+    2px 2px 2px #ED1C24, 
+    2px 2px 2px #ED1C24, 
+    2px 2px 2px #ED1C24;
+}
+
 .text-sorteos{
   font-size: 2.2rem;
 }
@@ -314,8 +324,7 @@ text-align: center;
 }
 
 .imgbultos {
-  width: 280px;
-  height: 200px;
+  width: 28%;
 }
 
 .padding {
@@ -323,6 +332,18 @@ text-align: center;
   padding-bottom: 4px;
   margin-bottom: 5px;
   margin-top: 5px;
+}
+
+.imgCerdo {
+  width: 72%;
+}
+
+.imgbultosAves {
+ width: 79%;
+}
+
+.imgAves {
+  width: 55%;
 }
 
 .carousel-inner{
@@ -375,28 +396,7 @@ text-align: center;
   .carousel-control-next {
     left: 860px;
   }
-    
-  .text-sorteos{
-    font-size: 1.7rem;
-  }
   
-  .textFechas {
-    font-size: 0.8rem;
-  }
-  
-  .textProductos {
-    font-size: 0.9rem;
-  }
-  
-  .textPremios {
-    font-size: 0.9rem;
-  }
-  
-  .imgbultos {
-    width: 110px;
-    height: 110px;
-  }  
-
   .carousel-control-next-icon, .carousel-control-prev-icon {
     width: 12rem;
     height: 12rem;
@@ -410,11 +410,10 @@ text-align: center;
 
 /* SECCION DE AVES */
 #sorteoCerdosAves {
-    background-image: url('../images/bacground_Rosa.jpg');
+    background-image: url('../images/bacground_Aves.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 100vh;
 }
 
 /* FIN DE SECCION DE AVES*/
@@ -423,18 +422,30 @@ text-align: center;
 
 #ganadores { 
   background-color: #F1F2F2;
-  background-image: url('../images/bacground_Winner02.png');
+  background-image: url('../images/bacground_Winner.png');
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 100vh;
-}
+  }
 
 .title {
   color: #72A13F;
   font-weight: 700;
   font-size: 2.5rem;
 }
+
+.title-modal-marron {
+  color: #42210B;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.title-modal-orange {
+  color: #E85510;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
 
 .proximamente {
  font-size: 3.5rem; 
@@ -445,6 +456,29 @@ text-align: center;
   font-weight: 600;
   font-size: 1.8rem;
 }
+
+.btn-marron {
+    background-color: #42210B;
+    color: #fff;
+    border-radius: 2rem;
+    padding: 0.5rem 2rem;
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
+    border: 0px;
+}
+
+.btn-orange {
+  background-color: #E85510;
+  color: #fff;
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  font-weight: 600;
+  display: inline-block;
+  width: 100%;
+  border: 0px;
+}
+
 
 .date-block {
   position: relative;
@@ -463,12 +497,17 @@ text-align: center;
   margin-top: 0.25rem;
 }
 
+.imgproximamente {
+  width: 68%;
+  height: 95%;
+}
+
 .verde-bg {
   background-color: #72A13F;
   color: #ffffff;
 }
 
-.naranja {
+.text-naranja {
   background: none;
   color: #ffffff;
   text-shadow:
@@ -537,7 +576,10 @@ text-align: center;
   .date-block .date {
     font-size: 0.9rem;
   }
-    
+  
+  .title-modal-marron{
+    font-size: 1rem;
+  }
   .tabla-ganadores {
     width: 99%;
     border-spacing: 0.2rem 0.2rem;
@@ -559,18 +601,14 @@ text-align: center;
 
 /* SECCION BASES DEL SORTEO*/
 
-#bases{   
-  background-image: url('../images/bacground_Base.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100vh;
+.modal-content {
+  background-color: #F1F2F2;
 }
 
 .basetitulo {
   text-align: center;
   color: #779A3E;
-  font-size: 2.5rem;
+  font-size: 1.9rem;
 }
 
 .textSubTitulo{
@@ -587,12 +625,13 @@ text-align: center;
 
 .bottom-Bases {
   width: 100%;
-  height: 90px;
+  height: 50px;
   background-image: url('../images/bottom.png');
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   background-color: #72A13F;
 }
+
 
 /* FIN  SECCION BASES DEL SORTEO*/
