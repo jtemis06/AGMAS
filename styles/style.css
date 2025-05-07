@@ -28,7 +28,6 @@ section {
 }
 
 .styleSection {
-  margin: 5px 5px 5px 5px;
   height: 100%;
   flex-direction: column;
   position: relative;
@@ -50,9 +49,10 @@ section {
 
 .nav-link {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 555;
     letter-spacing: 0.2rem;
     cursor: pointer;
+    color:#666666
 }
 
 .nav-link:hover,
@@ -73,30 +73,38 @@ section {
   background-color: #f1f2f2;
 }
 
+
+@media screen and (max-width: 1380px) {
+  .nav-link {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+  }
+}
+
 /* FIN SECCION MENU*/
 
 /* SECCION COMO PARTICIPAR*/
 
-#comoParticipar { 
-    background-color: #F1F2F2;
-    background-image: url('../images/bacground_Participate.png');
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
+#comoParticipar {
+  background-color: #F1F2F2;
+  background-image: url('../images/bgParticipar.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .imgtext01 {
-  width: 80%;
+  width: 100%;
 }
 
 .imgtext02 {
-  width: 60%;
-  height: 85%;
+  width: 100%;
+  height: 100%;
 }
 
 .imgCard {
-  width: 60%;
-  height: 70%;
+  width: 67%;
 }
 
 .curved-title {
@@ -196,13 +204,51 @@ section {
   display: inline-block;
 }
 
-.footerComoParticipar {
-  font-size: 0.8rem; 
+.footerComoParticipar-sorteos {
+  font-size: 1.1rem; 
   color: #779A3E; 
-  margin-top: 0.6rem;
+  margin-top: 0.8rem;
+  font-weight: 800;
 }
 
+.footerComoParticipar-vigencia {
+  font-size: 0.9rem; 
+  color: #779A3E; 
+  margin-top: 0.5rem;
+  font-weight: 800;
+}
+
+
+@media screen and (max-width: 991px) {
+  .imgCard {
+    width: 40%;
+  }
+
+}
 @media screen and (max-width: 767px) {
+
+  .imgtext01 {
+    width: 86%;
+  }
+
+  .imgtext02 {
+    width: 60%;
+  }
+
+  .imgCard {
+    width: 52%;
+  }
+
+  .footerComoParticipar-sorteos {
+    font-size: 0.9rem; 
+    font-weight: 700;
+  }
+  
+  .footerComoParticipar-vigencia {
+    font-size: 0.7rem; 
+    font-weight: 700;
+  }
+  
   .curved-title {
     font-size: 1.3rem;
   }
@@ -257,20 +303,17 @@ section {
   
   #comoParticipar p {
     margin-bottom: 3px;
-  }
-
-
-  
+  } 
 }
 
 /* FIN SECCION COMO PARTICIPAR*/
 
 /* SECCION SORTEO CABALLOS */
 #sorteoCaballos{
-    background-image: url('../images/bacground_Cabalos.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+  background-image: url('../images/bgcaballos.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .imgHorse {
@@ -291,28 +334,36 @@ section {
   background: none;
   color: #ffffff;
   text-shadow: 
-    2px 4px 2px #42210B, 
-    2px 2px 2px #42210B, 
-    2px 2px 2px #42210B, 
-    2px 2px 2px #42210B;
+    2px 4px 2px #41201F,
+    2px 2px 2px #41201F, 
+    2px 2px 2px #41201F, 
+    2px 2px 2px #41201F;
 }
 
 .text-orange {
   background: none;
   color: #ffffff;
   text-shadow: 
-    2px 4px 2px #ED1C24, 
-    2px 2px 2px #ED1C24, 
-    2px 2px 2px #ED1C24, 
-    2px 2px 2px #ED1C24;
+    2px  4px 2px #CF202E, 
+    2px  2px 2px #CF202E,
+    2px  2px 2px #CF202E,
+    2px  2px 2px #CF202E;
 }
 
 .text-sorteos{
-  font-size: 2.2rem;
+  font-size: 2.7rem;
 }
 
-.textFechas {
-  font-size: 1.1rem;
+.text-sorteos-sub{
+  font-size: 2rem;
+}
+
+.textFechas-01 {
+  font-size: 1.7rem;
+}
+
+.textFechas-02 {
+  font-size: 1.4rem;
 }
 
 .textProductos {
@@ -320,7 +371,7 @@ section {
 }
 
 .textPremios {
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .imgbultos {
@@ -346,14 +397,16 @@ section {
   width: 55%;
 }
 
+ 
 .carousel-inner{
-  max-height: 345px;
-  max-width: 875px;
+  max-height: 630px;
+  /*max-width: 875px; */ 
 }
+  
 
 .carousel-inner img {
-  width: 100%;
-  max-height: 345px;
+  width: 600px;
+ /* max-height: 345px; */
 }
 
 .carousel-control-prev {
@@ -378,16 +431,18 @@ section {
     width: 100px;
     height: 220px;
   }
-
+/*
   .carousel-inner{
     max-height: 345px;
     max-width: 875px;
   }
   
+
   .carousel-inner img {
     width: 100%;
     max-height: 345px;
   }
+    */
   
   .carousel-control-prev {
     left: -150px;
@@ -410,38 +465,38 @@ section {
 
 /* SECCION DE AVES */
 #sorteoCerdosAves {
-    background-image: url('../images/bacground_Aves.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+  background-image: url('../images/bgaves.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
+
 
 /* FIN DE SECCION DE AVES*/
 
 /* SECCION GANADORES*/
 
 #ganadores { 
-  background-color: #F1F2F2;
-  background-image: url('../images/bacground_Winner.png');
-  background-size: contain;
-  background-position: center center;
+  background-image: url('../images/bgbase.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   }
 
 .title {
   color: #72A13F;
-  font-weight: 700;
-  font-size: 2.5rem;
+  font-weight: 800;
+  font-size: 3rem;
 }
 
 .title-modal-marron {
-  color: #42210B;
+  color: #41201F;
   font-weight: 700;
   font-size: 2.5rem;
 }
 
 .title-modal-orange {
-  color: #E85510;
+  color: #F04B5D;
   font-weight: 700;
   font-size: 2.5rem;
 }
@@ -453,12 +508,12 @@ section {
 
 .subtitle {
   color: #72A13F;
-  font-weight: 600;
-  font-size: 1.8rem;
+  font-weight: 800;
+  font-size: 2.2rem;
 }
 
 .btn-marron {
-    background-color: #42210B;
+    background-color: #41201F;
     color: #fff;
     border-radius: 2rem;
     padding: 0.5rem 2rem;
@@ -469,7 +524,7 @@ section {
 }
 
 .btn-orange {
-  background-color: #E85510;
+  background-color: #F04B5D;
   color: #fff;
   border-radius: 2rem;
   padding: 0.5rem 2rem;
@@ -498,23 +553,13 @@ section {
 }
 
 .imgproximamente {
-  width: 68%;
-  height: 95%;
+  width: 70%;
+  height: 100%;
 }
 
 .verde-bg {
   background-color: #72A13F;
   color: #ffffff;
-}
-
-.text-naranja {
-  background: none;
-  color: #ffffff;
-  text-shadow:
-    2px  2px 2px #E85510,
-    2px  2px 2px #E85510,
-    2px  2px 2px #E85510,
-    2px  2px 2px #E85510;
 }
 
 .tabla-ganadores {
@@ -555,18 +600,21 @@ section {
   display: inline-block;
 }
 
+@media screen and (max-width: 1296px) {
+  .imgproximamente{
+    width: 90%;
+    height: 100%;
+  }
+}
+
 @media screen and (max-width: 767px) {
 
   .title {
     font-size: 1.9rem;
   }
-  
-  .proximamente {
-   font-size: 2.7rem; 
-  }
-  
+    
   .subtitle {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
   
   .date-block {
@@ -580,6 +628,11 @@ section {
   .title-modal-marron{
     font-size: 1rem;
   }
+
+  .title-modal-orange {
+    font-size: 1rem;
+  }
+  
   .tabla-ganadores {
     width: 99%;
     border-spacing: 0.2rem 0.2rem;
@@ -596,8 +649,6 @@ section {
 }
 
 /* FIN DE SECCION GANADORES*/
-
-
 
 /* SECCION BASES DEL SORTEO*/
 
@@ -625,6 +676,15 @@ section {
 
 .bottom-Bases {
   width: 100%;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #72A13F;
+  padding: 13px;
+}
+
+.bottom-Bases-Modal {
+  width: 100%;
   height: 50px;
   background-image: url('../images/bottom.png');
   background-size: contain;
@@ -633,5 +693,19 @@ section {
   background-color: #72A13F;
 }
 
-
+.imgAgromasbottom {
+  width: 18%;
+}
 /* FIN  SECCION BASES DEL SORTEO*/
+
+/*footer*/
+#bglinea { 
+  background-image: url('../images/bglinea.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 190px;
+  background-color: #F1F2F2;
+  }
+
+
