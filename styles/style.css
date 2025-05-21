@@ -8,6 +8,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
 section {
     min-height: 100vh;
 }
@@ -103,8 +108,19 @@ section {
   height: 100%;
 }
 
-.imgCard {
-  width: 67%;
+.imgCard-1 {
+  width: 66% ;
+  margin-top: 11%
+}
+
+.imgCard-2 {
+  width: 69%;
+  margin-top: 10%;
+}
+
+.imgCard-3 {
+  width: 69%;
+  margin-top: 0%;
 }
 
 .curved-title {
@@ -220,11 +236,39 @@ section {
 
 
 @media screen and (max-width: 991px) {
-  .imgCard {
-    width: 40%;
+  .imgCard-1 {
+    width: 50%;
+    margin-top: 3%
   }
-
+  
+  .imgCard-2 {
+    width: 53%;
+    margin-top: 3%;
+  }
+  
+  .imgCard-3 {
+    width: 53%;
+    margin-top: 3%;
+  }
 }
+
+@media screen and (max-width: 500px) {
+  .imgCard-1 {
+    width: 65%;
+    margin-top: 3%
+  }
+  
+  .imgCard-2 {
+    width: 68%;
+    margin-top: 3%;
+  }
+  
+  .imgCard-3 {
+    width: 68%;
+    margin-top: 3%;
+  }
+}
+
 @media screen and (max-width: 767px) {
 
   .imgtext01 {
@@ -431,19 +475,7 @@ section {
     width: 100px;
     height: 220px;
   }
-/*
-  .carousel-inner{
-    max-height: 345px;
-    max-width: 875px;
-  }
-  
 
-  .carousel-inner img {
-    width: 100%;
-    max-height: 345px;
-  }
-    */
-  
   .carousel-control-prev {
     left: -150px;
   }
@@ -461,6 +493,63 @@ section {
   }
       
 }
+
+
+/*
+  Imagen de productos participantes
+  *Se homologa para el tamaño de la pantalla
+
+*/
+
+@media screen and (max-width: 1300px) {
+
+  .imgbultos {
+    width: 260px;
+  }
+
+  .imgbultosAves{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .imgbultos {
+    width: 225px;
+  }
+
+  .imgCerdo {
+    width: 85%;
+  }
+
+  .imgbultosAves{
+    width: 100%;
+  }
+
+  .imgAves{
+    width: 69%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .imgbultos {
+    width: 170px;
+  }
+
+  .imgCerdo {
+    width: 85%;
+  }
+
+  .imgbultosAves{
+    width: 100%;
+  }
+
+  .imgAves{
+    width: 65%;
+  }
+}
+
 /* FIN SECCIÓN CABALLOS */
 
 /* SECCION DE AVES */
@@ -486,7 +575,7 @@ section {
 .title {
   color: #72A13F;
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .title-modal-marron {
@@ -704,7 +793,7 @@ section {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 190px;
+  height: 215px;
   background-color: #F1F2F2;
   }
 
