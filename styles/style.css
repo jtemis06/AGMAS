@@ -46,6 +46,24 @@ section {
   width: 47%;
 }
 
+.boton-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #72A13F;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 53px;
+    height: 53px;
+    font-size:38px;
+    z-index: 100;
+    
+}
+
 /* SECCION MENU*/
 .imgicon{
   width: 65px;
@@ -72,6 +90,11 @@ section {
   font-size: 1rem;
   color:white;
 
+}
+
+.justify-content-end
+ {
+    justify-content: center !important;
 }
 
 .banner-header{
@@ -751,11 +774,6 @@ section {
   font-size: 1.9rem;
 }
 
-.textSubTitulo{
-  text-align: center;
-  font-size: 0.85rem;
-}
-
 .textBasesDesc
 {
   text-align: justify; 
@@ -797,4 +815,27 @@ section {
   background-color: #F1F2F2;
   }
 
+.icon_social {
+  width: 30px;
+  height: 30px;  
+  color: #FFFF;
+}
+
+
+@media screen and (max-width: 1220px) {
+  .imgAgromasbottom {
+    width: 25%;
+  }
+
+  .icon_social {
+    width: 25px;
+    height: 25px; 
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .imgAgromasbottom {
+    width: 37%;
+  }
+}
 
